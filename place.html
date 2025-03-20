@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar - The Island Paradise</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/madagascar-small.webp" media="(max-width: 600px)">
+                <source srcset="images/madagascar-large.webp">
+                <img src="images/madagascar-large.webp" alt="Turle in Madagascar">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>587,041 sq km</dd>
+                
+                <dt>Population:</dt>
+                <dd>27,691,018</dd>
+                
+                <dt>Capital:</dt>
+                <dd>Antananarivo</dd>
+                
+                <dt>Languages:</dt>
+                <dd>Malagasy, French</dd>
+                
+                <dt>Currency:</dt>
+                <dd>Malagasy Ariary</dd>
+                
+                <dt>Time Zone:</dt>
+                <dd>UTC+3</dd>
+                
+                <dt>Calling Code:</dt>
+                <dd>+261</dd>
+                
+                <dt>Internet TLD:</dt>
+                <dd>.mg</dd>
+            </dl>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            
+            <dl>
+                <dt>Temperature:</dt>
+                <dd>10 °C</dd>
+                
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+                
+                <dt>Wind:</dt>
+                <dd>5 km/h</dd>
+                
+                <dt>Wind Chill:</dt>
+                <dd id="windchill">Calculating...</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> ☘️ Andrianasy Jean Rossy Lahimpagnahy ☘️ Madagascar</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #CE1126; /* Red from Madagascar flag */
+    --secondary-color: #007E3A; /* Green from Madagascar flag */
+    --text-color: #333;
+    --background-color: #fff;
+    --border-color: #ddd;
+    --heading-font: 'Arial', sans-serif;
+    --body-font: 'Helvetica', sans-serif;
+}
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 6px solid var(--secondary-color);
+}
+h1, h2 {
+    font-family: var(--heading-font);
+}
+main {
+    flex: 1;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+/* Hero Section */
+.hero {
+    height: 100%;
+    width: 100%;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* Data Section */
+.data {
+    background-color: rgba(249, 249, 249, 0.9);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    position: relative; /* Pour le positionnement du titre */
+}
+.data h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: -10%; /* Fait déborder le titre vers la gauche */
+    width: 110%;
+}
+.data dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+.data dt {
+    font-weight: bold;
+    text-align: right;
+}
+.data dd {
+    text-align: left;
+}
+/* Weather Section */
+.weather {
+    background-color: rgba(249, 249, 249, 0.9);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    position: relative; /* Pour le positionnement du titre */
+}
+.weather h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: -10%; /* Fait déborder le titre vers la gauche */
+    width: 110%;
+}
+.weather h2::after {
+    content: "⛅";
+    margin-left: 0.5rem;
+    display: none; /* Hidden by default, shown in larger screens */
+}
+.weather dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+.weather dt {
+    font-weight: bold;
+    text-align: right;
+}
+.weather dd {
+    text-align: left;
+}
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+/* Mobile-first approach */
+@media screen and (max-width: 600px) {
+    .data dl, .weather dl {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .weather svg {
+        display: block;
+        margin: 0 auto 1rem;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .data, .weather {
+        margin: 1rem;
+    }
+}
+/* Wider screens */
+@media screen and (min-width: 601px) {
+    .hero {
+        position: relative;
+        height: 100%;
+    }
+    
+    .data {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 25%;
+        z-index: 2;
+    }
+    
+    .weather {
+        position: absolute;
+        top: 70%; /* Position encore plus basse (était à 55%) */
+        right: 5%;
+        width: 25%;
+        z-index: 2;
+    }
+    
+    .weather h2::after {
+        display: inline; /* Show weather icon in larger screens */
+    }
+}
