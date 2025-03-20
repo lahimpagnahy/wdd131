@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Country where I live and I invite you to discover: Madagascar, the world's fourth-largest island known for its unique wildlife, beautiful landscapes, and rich cultural heritage.">
+    <meta name="author" content="Andrianasy Jean Rossy Lahimpagnahy">
     <title>Madagascar - The Island Paradise</title>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -17,10 +22,9 @@
             <picture>
                 <source srcset="images/madagascar-small.webp" media="(max-width: 600px)">
                 <source srcset="images/madagascar-large.webp">
-                <img src="images/madagascar-large.webp" alt="Turle in Madagascar">
+                <img src="images/madagascar-large.webp" alt="Lemurs in Madagascar">
             </picture>
         </section>
-
         <section class="data">
             <h2>Data</h2>
             <dl>
@@ -49,10 +53,18 @@
                 <dd>.mg</dd>
             </dl>
         </section>
-
         <section class="weather">
             <h2>Weather</h2>
-            
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon">
+                <path d="M17 18a5 5 0 0 0-10 0"></path>
+                <line x1="12" y1="9" x2="12" y2="2"></line>
+                <line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line>
+                <line x1="1" y1="18" x2="3" y2="18"></line>
+                <line x1="21" y1="18" x2="23" y2="18"></line>
+                <line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line>
+                <line x1="23" y1="22" x2="1" y2="22"></line>
+                <polyline points="8 6 12 2 16 6"></polyline>
+            </svg>
             <dl>
                 <dt>Temperature:</dt>
                 <dd>10 °C</dd>
@@ -68,7 +80,6 @@
             </dl>
         </section>
     </main>
-
     <footer>
         <p>&copy;<span id="current-year"></span> ☘️ Andrianasy Jean Rossy Lahimpagnahy ☘️ Madagascar</p>
         <p>Last Modification: <span id="last-modified"></span></p>
