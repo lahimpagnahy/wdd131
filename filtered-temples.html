@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 600px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span>Temple Album</span>
+            <button id="hamburgerBtn">≡</button>
+        </div>
+        <nav id="primaryNav">
+            <a href="#home">Home</a>
+            <a href="#old">Old</a>
+            <a href="#new">New</a>
+            <a href="#large">Large</a>
+            <a href="#small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="currentView">Temple Collection</h1>
+        
+        <div class="temple-grid" id="templeGrid">
+            <!-- Temples will be dynamically generated here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> ☘️ Andrianasy Jean Rossy Lahimpagnahy ☘️ Madagascar</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
