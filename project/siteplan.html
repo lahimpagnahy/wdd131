@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestConnect Site Plan</title>
+    <style>
+        /* Color Schema Application */
+        :root {
+            --primary-color: #005f73; /* Deep teal for headers and primary elements */
+            --secondary-color: #ee9b00; /* Golden orange for buttons and highlights */
+            --background-color: #f8f9fa; /* Light background */
+            --text-color: #333333; /* Dark text for readability */
+            --accent-color: #94d2bd; /* Light teal for accents and borders */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .color-sample {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .primary-color {
+            background-color: var(--primary-color);
+        }
+
+        .secondary-color {
+            background-color: var(--secondary-color);
+        }
+
+        .background-color {
+            background-color: var(--background-color);
+            border: 1px solid #ccc;
+        }
+
+        .text-color {
+            background-color: var(--text-color);
+        }
+
+        .accent-color {
+            background-color: var(--accent-color);
+        }
+
+        .font-example {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .wireframe-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .wireframe {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .wireframe img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .wireframe-container {
+                flex-direction: column;
+            }
+        }
+
+        .btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>InvestConnect Website Planning Document</h1>
+        <p>A comprehensive plan for creating the InvestConnect investment platform website</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>InvestConnect</strong> (www.investconnect.mg)</p>
+            <p>This name was chosen because it effectively communicates the core purpose of the platform: connecting investors with investment opportunities. The name is straightforward, memorable, and clearly indicates the site's function as a connecting hub for investment activities. The ".mg" domain signifies the site's focus on the Madagascar market, providing a localized investment platform.</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>InvestConnect serves as a digital platform connecting entrepreneurs and project owners with potential investors. The site's primary purpose is to:</p>
+            <ul>
+                <li>Provide a showcase for entrepreneurs to present their business ideas and projects</li>
+                <li>Create a secure environment for investors to discover and fund promising ventures</li>
+                <li>Facilitate communication between project owners and investors</li>
+                <li>Educate visitors about investment opportunities in various sectors</li>
+                <li>Offer tools for project funding simulation and progress tracking</li>
+            </ul>
+            <p>The platform aims to democratize access to funding for entrepreneurs while providing investors with a diverse portfolio of investment opportunities, ultimately contributing to economic development through collective funding initiatives.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <h3>Scenario 1: Entrepreneur Seeking Funding</h3>
+            <p>"I have a promising business idea but lack the capital to get started. How can InvestConnect help me secure funding and what information do I need to provide to attract potential investors?"</p>
+            
+            <h3>Scenario 2: Potential Investor</h3>
+            <p>"I'm interested in investing in startups but don't know where to find legitimate opportunities. How can I evaluate projects on InvestConnect and what security measures are in place to protect my investment?"</p>
+            
+            <h3>Scenario 3: First-time Visitor</h3>
+            <p>"I've heard about crowdfunding but never participated before. What are the basic steps to get involved either as an investor or project owner on InvestConnect?"</p>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <p>The color scheme is designed to convey trust, professionalism, and innovation, which are essential qualities for a financial platform:</p>
+            
+            <div>
+                <div class="color-sample primary-color"></div>
+                <p><strong>Primary Color:</strong> #005f73 (Deep Teal)</p>
+                <p>Usage: Main headers, navigation bar, footer, and primary UI elements. This color conveys trust and stability.</p>
+            </div>
+            
+            <div>
+                <div class="color-sample secondary-color"></div>
+                <p><strong>Secondary Color:</strong> #ee9b00 (Golden Orange)</p>
+                <p>Usage: Call-to-action buttons, highlights, progress bars, and interactive elements to draw attention.</p>
+            </div>
+            
+            <div>
+                <div class="color-sample background-color"></div>
+                <p><strong>Background Color:</strong> #f8f9fa (Light Gray)</p>
+                <p>Usage: Page backgrounds and content containers for a clean, professional look.</p>
+            </div>
+            
+            <div>
+                <div class="color-sample text-color"></div>
+                <p><strong>Text Color:</strong> #333333 (Dark Gray)</p>
+                <p>Usage: Body text for optimal readability against light backgrounds.</p>
+            </div>
+            
+            <div>
+                <div class="color-sample accent-color"></div>
+                <p><strong>Accent Color:</strong> #94d2bd (Light Teal)</p>
+                <p>Usage: Borders, separators, and subtle UI elements to complement the primary color.</p>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The website will primarily use the 'Segoe UI' font family with fallbacks for cross-platform compatibility:</p>
+            
+            <div class="font-example">
+                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">Heading 1</h1>
+                <p>Usage: Main page titles and major section headers (24-32px, bold, primary color)</p>
+            </div>
+            
+            <div class="font-example">
+                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">Heading 2</h2>
+                <p>Usage: Section headers and subheadings (20-24px, semi-bold, primary color)</p>
+            </div>
+            
+            <div class="font-example">
+                <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">Heading 3</h3>
+                <p>Usage: Minor section headers and form labels (18px, medium weight, primary color)</p>
+            </div>
+            
+            <div class="font-example">
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;">Body Text</p>
+                <p>Usage: Main content text (16px, regular weight, text color)</p>
+            </div>
+            
+            <div class="font-example">
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; margin: 0;">Small Text</p>
+                <p>Usage: Footer text, disclaimers, and additional information (14px, regular weight, text color)</p>
+            </div>
+            
+            <div class="font-example">
+                <button class="btn">Button Text</button>
+                <p>Usage: Call-to-action buttons and interactive elements (16px, bold, white color on secondary background)</p>
+            </div>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>Below are wireframe designs for the InvestConnect homepage in both desktop and mobile views:</p>
+            
+            <div class="wireframe-container">
+                <div class="wireframe">
+                    <h3>Desktop View</h3>
+                    <img src="images/wireframe-desktop-Investconnect.png" alt="Desktop Wireframe for InvestConnect Homepage">
+                    <p>The desktop wireframe shows the full layout with navigation, featured projects section, how it works steps, and call-to-action areas.</p>
+                </div>
+                
+                <div class="wireframe">
+                    <h3>Mobile View</h3>
+                    <img src="images/wireframe-mobile-Investconnect.png" alt="Mobile Wireframe for InvestConnect Homepage">
+                    <p>The mobile wireframe demonstrates how the site adapts to smaller screens with a collapsible menu and stacked content sections for optimal mobile viewing.</p>
+                </div>
+            </div>
+            
+            <p>These wireframes represent the basic layout structure for the InvestConnect homepage. The actual implementation will include the color scheme and typography defined in this document while maintaining responsive design principles.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 InvestConnect Site Plan | Andrianasy Jean Rossy Lahimpagnahy | WDD 131: Dynamic Web Fundamentals</p>
+    </footer>
+</body>
+</html>
