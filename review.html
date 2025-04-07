@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/styles-form.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+    <main>
+        <div class="confirmation">
+            <h2>Thank you for your review!</h2>
+            
+            <div class="confirmation-details">
+                <h3>Review Details</h3>
+                <p><strong>Product:</strong> <span id="confirmedProduct"></span></p>
+                <p><strong>Rating:</strong> <span id="confirmedRating"></span></p>
+                <p><strong>Installation Date:</strong> <span id="confirmedDate"></span></p>
+                <p><strong>Useful Features:</strong> <span id="confirmedFeatures"></span></p>
+                <p><strong>Review:</strong> <span id="confirmedReview"></span></p>
+                <p><strong>Submitted By:</strong> <span id="confirmedName"></span></p>
+            </div>
+            
+            <p>Your review is review #<span id="reviewCount" class="confirmation-count">1</span> submitted from this device.</p>
+            
+            <a href="form.html" class="back-btn">Submit Another Review</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy;2025 WDD 131 - Dynamic Web Fundamentals</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
